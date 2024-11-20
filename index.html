@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone XYZ - Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="smartphone-xyz.jpg" alt="Smartphone XYZ">
+            </div>
+            <div class="product-details">
+                <h2>Smartphone XYZ</h2>
+                <p class="price">$699.99</p>
+                <p class="description">The latest Smartphone XYZ features a stunning display, powerful processor, and an impressive camera system. Perfect for anyone who needs a reliable and stylish device.</p>
+
+                <div class="specifications">
+                    <h3>Specifications:</h3>
+                    <ul id="specs-list">
+                        <li>Display: 6.5 inches</li>
+                        <li>Processor: Octa-core</li>
+                        <li>RAM: 8GB</li>
+                        <li>Storage: 128GB</li>
+                        <li>Camera: 48MP + 12MP</li>
+                        <li>Battery: 4500mAh</li>
+                    </ul>
+                </div>
+
+                <div class="purchase-options">
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cart" class="cart-container">
+            <h2>Cart</h2>
+            <ul id="cart-list">
+                <!-- Cart items will be added here -->
+            </ul>
+            <p class="cart-total">Total: $<span id="cart-total-price">0.00</span></p>
+            <button class="checkout">Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tech Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
